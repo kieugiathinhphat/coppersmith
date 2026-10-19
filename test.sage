@@ -17,7 +17,7 @@ assert (ZZ(7),) in roots, ('lattice root missing', roots)
 assert stats['lattice_shape'][0] > 0, stats
 print('[PASS] Lattice-based recovery')
 
-# 3. Nonlinear Coppersmith-style example from the v7 regression corpus.
+# 3. Nonlinear Coppersmith-style example
 f = x**3 + 10*x**2 + 5000*x - 222
 roots = small_roots(f, (8,), m=3, d=3)
 assert (ZZ(4),) in roots, ('cubic root missing', roots)
